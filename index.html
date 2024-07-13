@@ -16,9 +16,9 @@
 
                 <div class="1 w-[70%] flex flex-col">
 
-                        <div class="logo invert my-3 mr-[18%]">
+                        <div class="logo invert my-3 md:mr-[18%]  flex justify-end">
                                 <svg viewBox="0 0 24 24" aria-hidden="true"
-                                        class="m-auto w-8 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-lrsllp r-1nao33i r-16y2uox r-8kz0gk">
+                                        class="m-auto w-8 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-lrsllp r-1nao33i r-16y2uox r-8kz0gk ml-[20%] sm:ml-[35%] md:ml-[45%]">
                                         <g>
                                                 <path
                                                         d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
@@ -84,18 +84,22 @@
                                 </ul>
                         </div>
 
-                        <button
-                                class="postBtn w-[250px] h-[55px] bg-blue-500 flex justify-center items-center rounded-full font-bold text-2xl mt-2 hover:cursor-pointer hover:bg-blue-700 ml-[30%]">
-                                Post</button>
+                        <div class="flex justify-end">
+                                <button
+                                        class="postBtn w-[250px] h-[55px] bg-blue-500 flex justify-center items-center rounded-full font-bold text-2xl mt-2 hover:cursor-pointer hover:bg-blue-700 mr-4">
+                                        Post</button>
+                        </div>
 
                         <div class="flex">
-                                <div
-                                        class="id ml-[30%] mt-5 bg-white w-10 h-10 flex justify-center items-center rounded-full">
-                                        <span class="text-3xl material-symbols-outlined invert">person</span>
-                                </div>
-                                <div>
-                                        <div class="name ml-2 mt-3 font-bold text-lg">Sujit Barnawal</div>
-                                        <div class="name2 ml-2 text-[15px] text-gray-400">@csitsujit</div>
+                                <div class="m-auto flex">
+                                        <div
+                                                class="id  md:ml-6 mt-5 bg-white w-10 h-10 flex justify-center items-center rounded-full">
+                                                <span class="text-3xl material-symbols-outlined invert">person</span>
+                                        </div>
+                                        <div>
+                                                <div class="name ml-2 mt-3 font-bold text-lg">Sujit Barnawal</div>
+                                                <div class="name2 ml-2 text-[15px] text-gray-400">@csitsujit</div>
+                                        </div>
                                 </div>
                         </div>
 
@@ -103,6 +107,43 @@
 
                 <div class="2 w-full border-x-[1px]">
 
+                        <div class="forAndFollowing w-[100%] h-[60px] flex border border-gray-500">
+                                <div
+                                        class="for w-1/2 flex justify-center items-center text-lg hover:bg-gray-500 hover:cursor-pointer ">
+                                        For you</div>
+                                <div
+                                        class="for w-1/2 flex justify-center items-center text-lg hover:bg-gray-500 hover:cursor-pointer ">
+                                        Following</div>
+                        </div>
+
+                        <div class="whatIsHappening w-[100%] h-[150px] border border-gray-500 flex flex-col gap-[10%]">
+                                <div class="first flex items-center">
+                                        <div
+                                                class="id  md:ml-6 mt-5 bg-white w-10 h-10 flex justify-center items-center rounded-full">
+                                                <span
+                                                        class="text-3xl material-symbols-outlined invert cursor-pointer">person</span>
+                                        </div>
+                                        <div class="mt-4 ml-3 text-2xl text-gray-500">What is happening?!</div>
+                                </div>
+                                <div class="second flex justify-between items-center p-4 ">
+                                        <div class="symbols flex ml-[12%]">
+                                                <div><span class="material-symbols-outlined Sky hover:bg-gray-500 hover:cursor-pointer p-2 rounded-full">imagesmode</span></div>
+                                                <div><span class="material-symbols-outlined Sky hover:bg-gray-500 hover:cursor-pointer p-2 rounded-full">gif_box</span></div>
+                                                <div><span class="material-symbols-outlined Sky hover:bg-gray-500 hover:cursor-pointer p-2 rounded-full">ballot</span></div>
+                                                <div><span class="material-symbols-outlined Sky hover:bg-gray-500 hover:cursor-pointer p-2 rounded-full">mood</span></div>
+                                                <div><span class="material-symbols-outlined Sky hover:bg-gray-500 hover:cursor-pointer p-2 rounded-full">pending_actions</span></div>
+                                                <div><span class="material-symbols-outlined Sky hover:bg-gray-500 hover:cursor-pointer p-2 rounded-full">location_on</span></div>
+                                        </div>
+                                        <div class="btn">
+                                                <button
+                                                        class="postBtn w-[80px] h-[40px] bg-blue-500 flex justify-center items-center rounded-full font-bold text-md mt-2 hover:cursor-pointer hover:bg-blue-700 mr-4">
+                                                        Post
+                                                </button>
+                                        </div>
+                                </div>
+
+                        </div>
+                        <div class="show w-[100%] h-[50px] border border-gray-500 flex justify-center items-center hover:bg-gray-500 hover:text-white hover:cursor-pointer text-blue-500 text-lg">Show 1 post</div>
 
                 </div>
 
@@ -189,7 +230,8 @@
                                 <div>
                                         <h1 class="font-bold text-2xl p-3">Who to follow</h1>
                                 </div>
-                                <div class=" flex w-[100%] hover:bg-gray-900 p-3 mt-2 justify-between">
+                                <div
+                                        class=" md:flex w-[100%] hover:bg-gray-900 p-3 mt-2 md:justify-between md:flex-row flex flex-col">
                                         <div class="flex">
                                                 <div
                                                         class="mt-5 bg-white w-10 h-10 flex justify-center items-center rounded-full">
@@ -206,7 +248,8 @@
                                         <button
                                                 class="w-[110px] h-[40px] bg-white flex justify-center items-center rounded-full font-bold text-lg mt-4 hover:cursor-pointer text-black">Follow</button>
                                 </div>
-                                <div class=" flex w-[100%] hover:bg-gray-900 p-3 mt-2 justify-between">
+                                <div
+                                        class=" md:flex w-[100%] hover:bg-gray-900 p-3 mt-2 md:justify-between md:flex-row flex flex-col">
                                         <div class="flex">
                                                 <div
                                                         class="mt-5 bg-white w-10 h-10 flex justify-center items-center rounded-full">
@@ -223,7 +266,8 @@
                                         <button
                                                 class="w-[110px] h-[40px] bg-white flex justify-center items-center rounded-full font-bold text-lg mt-4 hover:cursor-pointer text-black">Follow</button>
                                 </div>
-                                <div class=" flex w-[100%] hover:bg-gray-900 p-3 mt-2 justify-between">
+                                <div
+                                        class=" md:flex w-[100%] hover:bg-gray-900 p-3 mt-2 md:justify-between md:flex-row flex flex-col">
                                         <div class="flex">
                                                 <div
                                                         class="mt-5 bg-white w-10 h-10 flex justify-center items-center rounded-full">
@@ -231,7 +275,7 @@
                                                                 class="text-3xl material-symbols-outlined invert">person</span>
                                                 </div>
                                                 <div>
-                                                        <div class="name ml-2 mt-3 font-bold text-lg">Manjil Gautam
+                                                        <div class="name ml-2 mt-3 font-bold text-lg">Manzil Gautam
                                                         </div>
                                                         <div class="name2 ml-2 text-[15px] text-gray-400">@_destiny
                                                         </div>
@@ -240,7 +284,7 @@
                                         <button
                                                 class="w-[110px] h-[40px] bg-white flex justify-center items-center rounded-full font-bold text-lg mt-4 hover:cursor-pointer text-black">Follow</button>
                                 </div>
-                                <div class="ml-4 text-xl text-blue-500">Show more</div>
+                                <div class="ml-4 text-xl text-blue-500 cursor-pointer">Show more</div>
                         </div>
 
                         <div class="policy ml-8 mt-2 flex flex-col">

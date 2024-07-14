@@ -14,21 +14,23 @@
 <body class="bg-black text-white">
         <div class="container mx-auto flex">
 
-                <div class="1 w-[70%] flex flex-col sm:block hidden">
+                <div class="1 w-[50%] md:w-[70%] flex flex-col sm:block hidden">
 
-                        <div class="logo invert my-3 md:mr-[18%]   flex justify-end md:block hidden">
-                                <svg viewBox="0 0 24 24" aria-hidden="true"
-                                        class="m-auto w-8 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-lrsllp r-1nao33i r-16y2uox r-8kz0gk ml-[20%] sm:ml-[35%] md:ml-[45%]">
-                                        <g>
-                                                <path
-                                                        d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
-                                                </path>
-                                        </g>
-                                </svg>
-                        </div>
+                       
 
-                        <div class="side-menu-bar flex justify-end">
+                        <div class="side-menu-bar flex  mx-10 justify-end">
+                                
                                 <ul class="flex flex-col text-2xl space-y-2 px-12">
+                                        <div class="logo invert my-3  flex justify-start w-fit md:block ml-0 px-4">
+                                                <svg viewBox="0 0 24 24" aria-hidden="true"
+                                                        class="m-auto w-8 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-lrsllp r-1nao33i r-16y2uox r-8kz0gk">
+                                                        <g>
+                                                                <path
+                                                                        d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
+                                                                </path>
+                                                        </g>
+                                                </svg>
+                                        </div>
                                         <li
                                                 class="flex items-center gap-3 justify-start w-fit hover:cursor-pointer hover:rounded-3xl hover:bg-gray-600 px-4 py-2">
                                                 <span class="text-3xl material-symbols-outlined">home</span><span class="md:block hidden">Home</span>
@@ -81,31 +83,32 @@
                                                 class="flex items-center gap-3 justify-start w-fit hover:cursor-pointer hover:rounded-3xl hover:bg-gray-600 px-4 py-2">
                                                 <span class="text-3xl material-symbols-outlined">more_horiz</span><span class="md:block hidden">More</span>
                                         </li>
+                                        <div class="flex justify-end md:block hidden ">
+                                                <button
+                                                        class="postBtn w-[250px] h-[55px] bg-blue-500 flex justify-center items-center rounded-full font-bold text-2xl mt-2 hover:cursor-pointer hover:bg-blue-700 mr-4">
+                                                        Post</button>
+                                        </div>
+                                        <div class="flex items-center gap-4 md:visible">
+                                             <div class="id w-8 h-8 border p-7 flex justify-center items-center rounded-full mt-5">
+                                                <span class="text-3xl material-symbols-outlined">person</span><span class="md:block hidden"></span>
+                                             </div>
+                                             <div class="id_description flex flex-col mt-5">
+                                                <div>Sujit Barnawal</div>
+                                                <div class="text-md text-gray-500">@csitsujit</div>
+                                             </div>
+                                        </div>
                                 </ul>
                         </div>
 
-                        <div class="flex justify-end md:block hidden ">
-                                <button
-                                        class="postBtn w-[250px] h-[55px] bg-blue-500 flex justify-center items-center rounded-full font-bold text-2xl mt-2 hover:cursor-pointer hover:bg-blue-700 mr-4">
-                                        Post</button>
-                        </div>
+                        
 
-                        <div class="flex">
-                                <div class="m-auto flex md:block hidden">
-                                        <div
-                                                class="id  md:ml-6 mt-5 bg-white w-10 h-10 flex justify-center items-center rounded-full">
-                                                <span class="text-3xl material-symbols-outlined invert">person</span>
-                                        </div>
-                                        <div>
-                                                <div class="name ml-2 mt-3 font-bold text-lg">Sujit Barnawal</div>
-                                                <div class="name2 ml-2 text-[15px] text-gray-400">@csitsujit</div>
-                                        </div>
-                                </div>
-                        </div>
+                        
+                                
+                        
 
                 </div>
 
-                <div class="2 w-full border-x-[1px]">
+                <div class="2 w-[200%] md:w-[100%] border-x-[1px]">
 
                         <div class="forAndFollowing w-[100%] h-[60px] flex border border-gray-500  ">
                                 <div
@@ -776,17 +779,17 @@
 
                 </div>
 
-                <div class="3 w-full md:block hidden">
+                <div class="3 w-full md:block hidden md:w-[200%]">
 
                         <div
-                                class="search ml-8 mt-1 w-2/3 rounded-3xl bg-gray-800 text-white p-2 px-3 h-[50px] flex items-center ">
+                                class="search ml-8 mt-1 w-[50%] rounded-3xl bg-gray-800 text-white p-2 px-3 h-[50px] flex items-center ">
                                 <span class="text-3xl material-symbols-outlined">search</span>
                                 <input type="text" placeholder="Search"
                                         class="h-full w-full bg-transparent border-0 outline-none ml-4 text-xl text-gray-500">
                         </div>
 
                         <div
-                                class="note1 ml-8 border border-gray-500 mt-4 rounded-xl flex justify-start flex-col items-start w-2/3 p-4">
+                                class="note1 ml-8 border border-gray-500 mt-4 rounded-xl flex justify-start flex-col items-start w-[50%] p-4">
                                 <div>
                                         <h1 class="font-bold text-2xl">Subscribe to Premium</h1>
                                 </div>
@@ -800,7 +803,7 @@
                         </div>
 
                         <div
-                                class="note2 ml-8 border border-gray-500 mt-4 rounded-xl flex justify-start flex-col items-start w-2/3 ">
+                                class="note2 ml-8 border border-gray-500 mt-4 rounded-xl flex justify-start flex-col items-start w-[50%] ">
                                 <div>
                                         <h1 class="font-bold text-2xl p-3">Trends for you</h1>
                                 </div>
@@ -855,7 +858,7 @@
                         </div>
 
                         <div
-                                class="note3 ml-8 border border-gray-500 mt-4 rounded-xl flex justify-start flex-col items-start w-2/3 ">
+                                class="note3 ml-8 border border-gray-500 mt-4 rounded-xl flex justify-start flex-col items-start w-[50%]">
                                 <div>
                                         <h1 class="font-bold text-2xl p-3">Who to follow</h1>
                                 </div>
